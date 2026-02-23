@@ -1090,3 +1090,13 @@ section { padding: 5rem 0; }
   .cta-buttons .btn { width: 100%; }
   .error-page h1 { font-size: 4rem; }
 }
+
+/* === NUCLEAR: Force all content visible === */
+.reveal, .fade-up, .slide-in-left, .slide-in-right,
+[data-aos], [data-aos="fade-up"], [data-aos="fade-in"],
+.gallery-grid > *, .testimonials-grid > *, .about-stats > *,
+.split-text .char {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
