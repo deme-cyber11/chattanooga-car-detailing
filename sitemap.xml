@@ -74,9 +74,9 @@
   </url>
   <url>
     <loc>https://peakshinedetailing.com/locations/red-bank.html</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://peakshinedetailing.com/locations/signal-mountain.html</loc>
@@ -86,9 +86,9 @@
   </url>
   <url>
     <loc>https://peakshinedetailing.com/locations/hixson.html</loc>
-    <lastmod>2026-02-23</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://peakshinedetailing.com/locations/east-brainerd.html</loc>
@@ -119,6 +119,30 @@
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://peakshinedetailing.com/locations/cleveland-tn.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://peakshinedetailing.com/locations/ringgold-ga.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://peakshinedetailing.com/locations/fort-oglethorpe-ga.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://peakshinedetailing.com/locations/dalton-ga.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://peakshinedetailing.com/blog/</loc>
