@@ -1,0 +1,23 @@
+[
+  {
+    "index": 1,
+    "slug": "ceramic-coating-hero",
+    "prompt": "Professional detailer applying ceramic coating to a dark-colored sedan in a Chattanooga Tennessee detailing studio, carefully wiping the ceramic sealant in straight overlapping lines with a suede applicator pad on the hood, vehicle under bright LED panel lights revealing a flawless mirror-like paint surface, clean professional detailing bay with Tennessee River valley hills visible through an open bay door, shot on Canon EOS R5 with 85mm f/1.4 lens, shallow depth of field focusing on the applicator gliding across the paint, photorealistic automotive photography with crisp reflections",
+    "draft_path": "images/drafts/1_ceramic-coating-hero.jpg",
+    "approved": true
+  },
+  {
+    "index": 2,
+    "slug": "exterior-detailing-hero",
+    "prompt": "Professional exterior car detailing in progress at a Chattanooga Tennessee detail shop, technician using a dual-action polisher with a foam cutting pad on the door panel of a white SUV, polishing compound haze being corrected to reveal deep gloss, spray bottles and microfiber towels organized on a detailing cart nearby, bright daylight mixed with overhead shop lighting, Lookout Mountain foothills visible through the open garage bay, shot on Sony A7R IV with 24-70mm f/2.8 GM lens, medium angle capturing the polisher in motion with light swirl marks being removed, photorealistic commercial photography",
+    "draft_path": "images/drafts/2_exterior-detailing-hero.jpg",
+    "approved": true
+  },
+  {
+    "index": 3,
+    "slug": "interior-detailing-hero",
+    "prompt": "Meticulous interior car detailing of a luxury vehicle in Chattanooga Tennessee, detailer using a soft bristle brush and all-purpose cleaner on leather seats while a hot water extractor cleans the carpet, steam rising from the extraction process, dashboard freshly dressed with a matte protectant, afternoon sunlight streaming through the car windows highlighting the clean interior surfaces, Chattanooga area trees and green hills in the background through the shop door, shot on Nikon Z7 II with 35mm f/1.4 lens, interior perspective from the passenger side showing the full cabin detail work, photorealistic documentary photography with warm natural tones",
+    "draft_path": "images/drafts/3_interior-detailing-hero.jpg",
+    "approved": true
+  }
+]
