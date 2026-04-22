@@ -1,8 +1,8 @@
 /* Chattanooga Car Detailing — site-specific color overrides for v2.5 */
 :root {
-  --color-accent:      #2563eb;
-  --color-accent-dark: #1d4ed8;
-  --color-accent-glow: rgba(37, 99, 235, 0.3);
+  --color-accent:      #e63946;
+  --color-accent-dark: #c1121f;
+  --color-accent-glow: rgba(230, 57, 70, 0.3);
 }
 
 /* Fixed header clearance */
