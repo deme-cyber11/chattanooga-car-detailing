@@ -61,3 +61,39 @@ main table,
   margin-bottom: 2.5rem;
 }
 .testimonial-section .testimonial-quote { font-style: normal !important; }
+
+/* ── Hero legibility (2026-09-21) ────────────────────────────────────────────
+   The hero sits on a dark background, but its text classes had no colour rule
+   of their own, so they inherited body's var(--color-text) — a near-black —
+   and rendered invisible. Measured from rendered pixels before this fix: the
+   star rating had a light/dark spread of 6 out of 255 and the trust bullets 13,
+   against 235 for the headline. They were not dim; they were gone.
+
+   The cause is a class-name drift, not a design choice: style.v2.5.css styles
+   .hero__subtitle in white, and the markup uses .hero__sub. Nothing was
+   overriding anything — the rules simply never matched. Fixed here rather than
+   in v2.5 because v2.5 is the shared template across sites and this is the
+   site-specific override file, which also loads last. */
+.hero__sub {
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+}
+.hero__rating,
+.hero__trust {
+  color: rgba(255, 255, 255, 0.88);
+}
+.hero__trust li,
+.hero__trust span {
+  color: inherit;
+}
+.stars {
+  color: #ffc857;              /* gold, so the rating reads as a rating */
+  letter-spacing: 0.08em;
+}
+/* Any hero link or small print inherits the light treatment too, so a future
+   element added to the hero cannot silently disappear the same way. */
+.hero__content a:not(.btn) {
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
