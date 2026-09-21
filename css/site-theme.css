@@ -97,3 +97,32 @@ main table,
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* ── Footer legibility (2026-09-21) ──────────────────────────────────────────
+   Same class of fault as the hero, found by tools/contrast-sweep.py: the footer
+   background is #080808 and its links were inheriting body's #1c1c1c. Measured
+   spread of 21 out of 255 — the service links down there ("Interior Detailing",
+   "Exterior Detailing", "Ceramic Coating") were unreadable, which also means the
+   internal links Google follows were invisible to every human visitor. */
+.footer a,
+footer a {
+  color: rgba(241, 245, 249, 0.82);
+}
+.footer a:hover,
+footer a:focus-visible {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer,
+.footer p,
+.footer li,
+footer p {
+  color: rgba(241, 245, 249, 0.72);
+}
+.footer h3,
+.footer h4,
+footer h3,
+footer h4 {
+  color: #ffffff;
+}
