@@ -17,6 +17,8 @@
     
     navLinks.querySelectorAll('a').forEach(function(link) {
       link.addEventListener('click', function() {
+        // a dropdown trigger opens its submenu in the toggle menu; it must not close the menu
+        if (window.innerWidth < 1025 && link.parentElement.classList.contains('nav-dropdown')) return;
         navLinks.classList.remove('active');
         toggle.classList.remove('active');
         toggle.setAttribute('aria-expanded', 'false');
@@ -33,7 +35,7 @@
     
     document.querySelectorAll('.nav-dropdown > a').forEach(function(trigger) {
       trigger.addEventListener('click', function(e) {
-        if (window.innerWidth < 769) {
+        if (window.innerWidth < 1025) {
           e.preventDefault();
           e.stopPropagation();
           var parent = this.parentElement;

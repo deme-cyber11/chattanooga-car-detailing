@@ -428,3 +428,43 @@ body.dm .dm-post span { display: block; padding: 20px 22px 24px; font: 700 1.08r
   body.dm .sticky-cta__estimate { background: var(--dark); color: #fff; }
   body.dm.dm-home .footer { padding-bottom: 96px; }
 }
+
+/* ---------- Round 2 (2026-10-01): phone and tablet ---------- */
+/* Real bug fix: html/body overflow-x:hidden made body a scroll container, so the sticky header
+   declared above never stuck on inner pages. clip keeps the sideways clipping without that side effect. */
+html, body { overflow-x: clip; }
+/* Inner pages: the desktop nav does not fit below 1025px (logo, dropdown arrows and phone wrap),
+   so tablets get the same toggle menu phones use. */
+@media (max-width: 1024px) {
+  body.dm .header .menu-toggle { display: flex; }
+  body.dm .header .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; padding: 1.5rem; background: var(--primary, #0d1015); border-bottom: 1px solid rgba(255,255,255,.1); box-shadow: 0 12px 32px rgba(0,0,0,.3); }
+  body.dm .header .nav-links.active { display: flex; }
+  body.dm .header .nav-links li { border-bottom: 1px solid rgba(255,255,255,.08); }
+  body.dm .header .nav-links li:last-child { border: none; }
+  body.dm .header .nav-links li a { display: flex; align-items: center; justify-content: center; padding: .6rem 0; min-height: 44px; }
+  body.dm .header .dropdown-menu { position: static; box-shadow: none; min-width: 100%; display: none; background: transparent; }
+  body.dm .header .nav-dropdown.open .dropdown-menu { display: block; }
+}
+@media (hover: none) and (max-width: 1024px) {
+  body.dm .header .logo, body.dm .nav__logo { min-height: 44px; display: inline-flex; align-items: center; }
+  body.dm .nav__logo { gap: .28em; }
+  body.dm .nav__links a { min-height: 44px; display: flex; align-items: center; }
+  body.dm .footer a, body.dm .footer-links a, body.dm .footer__links a { min-height: 44px; display: inline-flex; align-items: center; }
+  body.dm .dm-hero a, body.dm .breadcrumb a { min-height: 44px; display: inline-flex; align-items: center; }
+}
+@media (max-width: 640px) {
+  body.dm .footer__bottom, body.dm .footer__bottom p { font-size: .9rem; }
+}
+@media (hover: none) and (max-width: 1024px) {
+  body.dm .nav__hamburger { min-width: 44px; min-height: 44px; align-items: center; justify-content: center; }
+}
+@media (hover: none) and (max-width: 1024px) {
+  body.dm main li > a[href^="tel:"] { min-height: 44px; display: inline-flex; align-items: center; }
+}
+@media (max-width: 1024px) {
+  body.dm .header .dropdown-menu li a { color: rgba(255,255,255,.78); font-weight: 500; }
+  body.dm .header .dropdown-menu li a:hover { color: #fff; }
+}
+@media (max-width: 1024px) {
+  body.dm .header .nav-links.active { max-height: calc(100vh - 72px); overflow-y: auto; -webkit-overflow-scrolling: touch; }
+}
