@@ -239,7 +239,7 @@ body.dm .nav__hamburger { display: none; margin-left: auto; background: none; bo
 body.dm .nav__hamburger span { display: block; width: 24px; height: 2px; background: #fff; border-radius: 2px; }
 
 /* ---------- home: hero ---------- */
-body.dm .hero { display: block; background-image: url("/images/hero/hero-main.webp") !important; position: relative; padding: clamp(80px, 10vw, 140px) 0 clamp(110px, 12vw, 160px); background-position: center; background-size: cover; color: #fff; min-height: 0; }
+body.dm .hero { display: block; background-image: url("/images/hero/suv-driveway-sunset.webp") !important; position: relative; padding: clamp(80px, 10vw, 140px) 0 clamp(110px, 12vw, 160px); background-position: center; background-size: cover; color: #fff; min-height: 0; }
 body.dm .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, rgba(10,12,16,.92) 0%, rgba(10,12,16,.72) 50%, rgba(10,12,16,.25) 100%); }
 body.dm .hero__inner { position: relative; width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 24px; }
 body.dm .hero__content { max-width: 720px; text-align: left; margin: 0; }
@@ -488,3 +488,19 @@ body.dm .header .dropdown-menu li a:hover, body.dm .header .dropdown-menu li a:f
   body.dm .floating-cta a:not(:has(.fcta-mobile-label)) > .fcta-label { display: inline; position: static; opacity: 1; background: none; padding: 0; font-size: inherit; color: inherit; order: 2; }
   body.dm .floating-cta a svg { width: 18px; height: 18px; flex-shrink: 0; }
 }
+/* 404 (now styled under nested URLs too): the subheading was #1a1a1a on the dark photo hero,
+   and the square photo filled the screen */
+body.dm .dm-hero .error-page h2 { color: #fff; }
+body.dm .dm-hero .error-page img.hero-img { width: 100%; max-width: 560px; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 16px; margin: 6px auto 26px; display: block; box-shadow: 0 18px 40px rgba(0,0,0,.35); }
+/* Before and after pairs (homepage) */
+body.dm .dm-ba { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+body.dm .dm-ba__item { background: #fff; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; box-shadow: var(--shadow); margin: 0; }
+body.dm .dm-ba__pair { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--line); }
+body.dm .dm-ba__pair figure { position: relative; margin: 0; }
+body.dm .dm-ba__pair img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 0 !important; }
+body.dm .dm-ba__tag { position: absolute; left: 10px; top: 10px; padding: 4px 10px; border-radius: 999px; font: 700 .78rem/1.2 var(--body); letter-spacing: .04em; text-transform: uppercase; color: #fff; background: rgba(13,16,21,.78); }
+body.dm .dm-ba__tag--after { background: var(--accent); }
+body.dm .dm-ba__item figcaption { padding: 16px 18px 20px; font-size: .97rem; line-height: 1.55; color: var(--muted); }
+body.dm .dm-ba__item figcaption strong { display: block; color: var(--ink); font-family: var(--display); font-size: 1.05rem; margin-bottom: 4px; }
+@media (max-width: 1024px) { body.dm .dm-ba { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { body.dm .dm-ba { grid-template-columns: 1fr; gap: 18px; } }
