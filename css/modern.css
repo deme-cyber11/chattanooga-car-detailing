@@ -468,3 +468,23 @@ html, body { overflow-x: clip; }
 @media (max-width: 1024px) {
   body.dm .header .nav-links.active { max-height: calc(100vh - 72px); overflow-y: auto; -webkit-overflow-scrolling: touch; }
 }
+
+/* 2026-10-07 design check */
+/* Desktop dropdowns: links were #1a1a1a text on the #1a1a1a panel (unreadable) */
+body.dm .header .dropdown-menu li a { color: rgba(255,255,255,.84); }
+body.dm .header .dropdown-menu li a:hover, body.dm .header .dropdown-menu li a:focus-visible { color: #fff; background: rgba(255,255,255,.08); }
+/* Blog index cards stayed three across on phones */
+@media (max-width: 860px) { body.dm .dm-posts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { body.dm .dm-posts { grid-template-columns: 1fr; gap: 18px; } }
+/* Phone CTA bar: one style on every page (the quote half had no background, icons doubled,
+   and the blog and area pages showed two stacked squares over the content) */
+@media (max-width: 768px) {
+  body.dm .floating-cta { left: 0 !important; right: 0 !important; bottom: 0 !important; flex-direction: row !important; gap: 0 !important; border-radius: 0; box-shadow: 0 -6px 20px rgba(0,0,0,.18); }
+  body.dm .floating-cta a { flex: 1 1 0; width: auto !important; height: auto !important; min-height: 52px; border-radius: 0 !important; padding: 12px 8px; gap: 8px; font-size: .95rem; font-weight: 700; color: #fff; box-shadow: none !important; transform: none !important; animation: none !important; }
+  body.dm .floating-cta .fcta-call { background: var(--accent); }
+  body.dm .floating-cta .fcta-quote { background: #111418; }
+  body.dm .floating-cta a:has(.fcta-mobile-label) > svg, body.dm .floating-cta a:has(.fcta-mobile-label) > .fcta-label { display: none; }
+  body.dm .floating-cta .fcta-mobile-label { display: inline-flex; align-items: center; gap: 8px; }
+  body.dm .floating-cta a:not(:has(.fcta-mobile-label)) > .fcta-label { display: inline; position: static; opacity: 1; background: none; padding: 0; font-size: inherit; color: inherit; order: 2; }
+  body.dm .floating-cta a svg { width: 18px; height: 18px; flex-shrink: 0; }
+}
